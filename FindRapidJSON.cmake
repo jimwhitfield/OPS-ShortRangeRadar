@@ -35,7 +35,7 @@
 #  find_package(rapidjson REQUIRED)
 #
 #  include_directories("${RAPIDJSON_INCLUDE_DIRS}")
-#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${RAPIDJSON_CXX_FLAGS}")
+#  set(cmAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${RAPIDJSON_CXX_FLAGS}")
 #  add_executable(foo foo.cc)
 #
 # -----------------------------------------------------------------------------------
@@ -59,6 +59,7 @@ mark_as_advanced(RAPIDJSON_INCLUDE_DIRS)
 
 if(RAPIDJSON_INCLUDE_DIRS)
   set(RAPIDJSON_FOUND TRUE)
+  set(RapidJSON_INCLUDE_DIRS "${RAPIDJSON_INCLUDE_DIRS}")
 endif()
 
 mark_as_advanced(RAPIDJSON_FOUND)
